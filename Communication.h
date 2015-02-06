@@ -12,6 +12,8 @@ class Communication
 	TCP messTCP;
 	
 	public:
+	Communication();
+	~Communication();
 	void sendData(){}
 	void receiveData(){};
 	void chooseComm(int _nCom){};

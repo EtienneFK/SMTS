@@ -7,9 +7,15 @@ SMS::SMS(){
 SMS::~SMS(){
 	
 }
-SMS::checkGSMAvailability(){
+boolean SMS::checkGSMAvailability(){
+	return TRUE;
+}
+void SMS::sendSMS(string _message){
 	
 }
-SMS::sendSMS(string _message){
-	
+string SMS::receiveSMS(){
+	return NULL;
+}
+int SMS::errorSMS(){
+	return 0;
 }

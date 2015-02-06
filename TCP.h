@@ -3,5 +3,11 @@
 
 class TCP{
 	
+	public:
+	TCP();
+	~TCP();
+	void sendTCP(string _message);
+	string receiveTCP();
+	
 }
 #endif

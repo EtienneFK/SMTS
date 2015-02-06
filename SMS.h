@@ -10,8 +10,11 @@ class SMS{
 	
 	
 	public:
+	SMS();
+	~SMS();
 	boolean checkGSMAvailability();
 	void sendSMS(string _message);
 	string receiveSMS();
-	
+	int errorSMS();
 }
+#endif

@@ -1,15 +1,22 @@
 #include "Communication.h"
 
 Communication::Communication(){
-	
+		sms = new SMS();
+	lora = new Lora();
+	tcp = new TCP();
 }
-Communication::sendData(){
-	
+Communication::~Communication(){
+	delete sms;
+	delete lora;
+	delete tcp;
 }
-Communication::receiveData(){
-	
+void Communication::sendData(){
+
 }
-Communication::chooseComm(int _nComm){
+string Communication::receiveData(){
+	return NULL;
+}
+void Communication::chooseComm(int _nComm){
 	switch(_nComm){
 		case 0:{
 			
