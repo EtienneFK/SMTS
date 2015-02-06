@@ -1,4 +1,6 @@
 #include "TCP.h"
+#include <string>
+using namespace std;
 TCP::TCP(){
 	
 }

@@ -1,5 +1,6 @@
 #include "Lora.h"
-
+#include <string>
+using namespace std;
 Lora::Lora(){
 	
 }
