@@ -2,7 +2,6 @@
 #include <string>
 
 Sms::Sms() {
-	string _sendMessage = NULL;
 	char _numTel[10];
 	}
 
@@ -10,7 +9,7 @@ Sms::~Sms() {
 	
 	}
 
-int Sms::sendSms(string _message) {
+int Sms::sendSms(string _data) {
 	int error = 0;
 	while(!LSMS.ready()) {
 		delay(1000);
@@ -19,7 +18,7 @@ int Sms::sendSms(string _message) {
 		}
 
 	LSMS.beginSms(_numtel);
-	LSMS.print(_sendMessage);
+	LSMS.print(_data);
 	LSMS.endSms();
 
 	return 0;

@@ -5,7 +5,7 @@ using namespace std;
 /* Constructor
 */
 TCP::TCP(){ 
-	
+	string _URL-Serv = NULL;
 }
 /* Destructor
 */
@@ -14,7 +14,7 @@ TCP::~TCP(){
 }
 /* Send data using 3G network
 */
-void TCP::sendTCP(string _message){
+void TCP::sendTCP(string _data){
 	while(!LGPRS.attachGPRS()){						//Waiting for GPRS initialization
 		delay(1000);
 	}
@@ -44,12 +44,6 @@ char *TCP::receiveTCP(){
 			break;									//No more data
 	}
 	return NULL;
-}
-/* return true if the network is sufficient to create 3G connection 
-	otherwise return false
-*/
-bool TCP::checkTCPAvailability(){ 
-	return true;
 }
 /* A voir
 */

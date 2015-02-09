@@ -21,14 +21,4 @@ void Lora::sendLora(string _message){
 char *Lora::receiveLora(){
 	return NULL;
 }
-/* Return true if the network is sufficient for sending a LoRa message 
-	otherwise return false
-*/
-bool Lora::checkLoraAvailability(){ //
-	return true;
-}
-/* A voir
-*/
-int Lora::errorLora(){
-	return 0;
 }
