@@ -16,3 +16,6 @@ string Lora::receiveLora(){
 int Lora::errorLora(){
 	return 0;
 }
+bool Lora::checkLoraAvailability(){
+	return true;
+}

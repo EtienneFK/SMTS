@@ -7,6 +7,7 @@ class Lora{
 	Lora();
 	~Lora();
 	void sendLora(string _message);
+	bool checkLoraAvailability();
 	string receiveLora();
 	int errorLora();
 }

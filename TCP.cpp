@@ -16,3 +16,6 @@ string TCP::receiveTCP(){
 int TCP::errorTCP(){
 	return 0;
 }
+bool TCP::checkTCPAvailability(){
+	return true;
+}

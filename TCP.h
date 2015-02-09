@@ -8,6 +8,7 @@ class TCP{
 	~TCP();
 	void sendTCP(string _message);
 	string receiveTCP();
+	bool checkTCPAvailability();
 	
 }
 #endif
