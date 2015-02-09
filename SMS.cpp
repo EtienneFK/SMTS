@@ -23,7 +23,6 @@ char *SMS::receiveSMS(){
 	while(!LSMS.ready()){
 		delay(1000);
 	}
-	
 	char _buf[10];
 	LSMS.remoteNumber(_buf,10); //Number stored
 	if(strcmp(_buf,_numTel)=0){ //Verify if the number is allowed for communicate with the device
