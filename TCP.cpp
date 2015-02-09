@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 TCP::TCP(){
-	
+	string _adrServ = "http://.......";
 }
 TCP::~TCP(){
 	

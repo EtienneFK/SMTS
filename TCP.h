@@ -2,6 +2,8 @@
 #define DEF_TCP
 
 class TCP{
+	private:
+	string _adrServ;
 	
 	public:
 	TCP();

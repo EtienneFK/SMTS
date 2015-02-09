@@ -14,7 +14,7 @@ class SMS{
 	~SMS();
 	boolean checkGSMAvailability();
 	void sendSMS(string _message);
-	string receiveSMS();
+	char *receiveSMS();
 	int errorSMS();
 }
 #endif

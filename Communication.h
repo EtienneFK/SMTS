@@ -7,9 +7,9 @@
 class Communication
 {
 	private:
-	SMS messSMS;
-	Lora messLora;
-	TCP messTCP;
+	SMS sms;
+	Lora lora;
+	TCP tcp;
 	bool chkSMS;
 	bool chkLora;
 	bool chkTCP;
@@ -17,7 +17,7 @@ class Communication
 	public:
 	Communication();
 	~Communication();
-	string receiveData(int _nComm){};
+	char *receiveData(int _nComm){};
 	void sendData(int _nComm, string _data){};
 }
 #endif

@@ -1,7 +1,7 @@
 #include "Communication.h"
 
 Communication::Communication(){
-		sms = new SMS();
+	sms = new SMS();
 	lora = new Lora();
 	tcp = new TCP();
 	chkGSM = false;
@@ -13,7 +13,7 @@ Communication::~Communication(){
 	delete lora;
 	delete tcp;
 }
-string Communication::receiveData(int _nComm){
+char *Communication::receiveData(int _nComm){
 	return NULL;
 }
 void Communication::sendData(int _nComm, string _data){
@@ -46,6 +46,7 @@ void Communication::sendData(int _nComm, string _data){
 					if(chkGSM = true)
 					sms.sendSMS(_data);
 				}
+		}
 		}
 		case 2:{ //3G sending
 			chkTCP = tcp.checkTCPAvailability(); //check 3G signal

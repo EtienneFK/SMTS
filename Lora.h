@@ -1,7 +1,10 @@
 #ifndef DEF_LORA
 #define DEF_LORA
 
+#include <SX1272.h>
+
 class Lora{
+	private:
 	
 	public:
 	Lora();
