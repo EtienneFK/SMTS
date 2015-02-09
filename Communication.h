@@ -10,12 +10,14 @@ class Communication
 	SMS messSMS;
 	Lora messLora;
 	TCP messTCP;
+	bool chkSMS;
+	bool chkLora;
+	bool chkTCP;
 	
 	public:
 	Communication();
 	~Communication();
-	void sendData(){}
-	void receiveData(){};
-	void chooseComm(int _nCom){};
+	string receiveData(int _nComm){};
+	void sendData(int _nComm, string _data){};
 }
 #endif

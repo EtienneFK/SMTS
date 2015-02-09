@@ -3,15 +3,15 @@
 using namespace std;
 SMS::SMS(){
 	string _message = NULL;
-	
+	long _numTel = 0;
 }
 SMS::~SMS(){
 	
 }
 boolean SMS::checkGSMAvailability(){
-	return TRUE;
+	return true;
 }
-void SMS::sendSMS(string _message){
+void SMS::sendSMS(string _message,long _numTel){
 	
 }
 string SMS::receiveSMS(){
