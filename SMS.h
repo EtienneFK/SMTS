@@ -1,3 +1,6 @@
+/* Classe de gestion des échanges SMS
+	Class who manage SMS data exchange
+*/
 #ifndef DEF_SMS
 #define DEF_SMS
 

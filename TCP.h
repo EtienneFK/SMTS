@@ -1,6 +1,10 @@
+/* Classe de gestion des échanges 3G
+	Class who manage 3G data exchange
+*/
 #ifndef DEF_TCP
 #define DEF_TCP
 
+#include <GSM.h>
 class TCP{
 	private:
 	string _adrServ;

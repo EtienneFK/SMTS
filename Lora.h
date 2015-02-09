@@ -1,3 +1,6 @@
+/* Classe de gestion des échanges Lora
+	Class who manage LoRa data exchange
+*/
 #ifndef DEF_LORA
 #define DEF_LORA
 

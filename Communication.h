@@ -1,6 +1,9 @@
-/* Classe de gestion des échanges de données GSM et Lora
+/* Classe de gestion des échanges de données
+	Class who manage differents way for data exchange
 */
-#include <GSM.h>
+#include "SMS.h"
+#include "Lora.h"
+#include "TCP.h"
 
 #ifndef DEF_COMMUNICATION
 #define DEF_COMMUNICATION

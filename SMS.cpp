@@ -1,13 +1,19 @@
 #include "SMS.h"
 #include <string>
 using namespace std;
-SMS::SMS(){ //Constructor
+/* Constructor
+*/
+SMS::SMS(){ 
 	string _message = NULL;
 	char _numTel[10];
 }
-SMS::~SMS(){ //Destructor
+/* Destructor
+*/
+SMS::~SMS(){ 
 }
-void SMS::sendSMS(string _message){ //send a SMS
+/* Send a SMS
+*/
+void SMS::sendSMS(string _message){
 	while(!LSMS.ready()){
 		delay(1000);
 	}
@@ -15,14 +21,16 @@ void SMS::sendSMS(string _message){ //send a SMS
 	LSMS.print(_message);
 	LSMS.endSMS()
 }
-char *SMS::receiveSMS(){ //return SMS into a char*
+/* Return SMS into a char*
+*/
+char *SMS::receiveSMS(){
 
 	while(!LSMS.ready()){
 		delay(1000);
 	}
 	char _buf[10];
 	LSMS.remoteNumber(_buf,10); //Number stored
-	if(strcmp(_buf,_numTel)=0){ //Verify if the number is allowed for communicate with the device
+	if(strcmp(_buf,_numTel)=0){ //Verify if the number is allowed to communicate with the device
 		char _message[50]; //Message received
 		int c; //Chars of SMS
 		int n; //Increment
@@ -37,9 +45,13 @@ char *SMS::receiveSMS(){ //return SMS into a char*
 	
 	return NULL;
 }
-boolean SMS::checkGSMAvailability(){ //return true if the network is sufficient for sending a SMS otherwise false
+/* Return true if the network is sufficient for sending a SMS otherwise false
+*/
+boolean SMS::checkGSMAvailability(){
 	return true;
 }
-int SMS::errorSMS(){ //A voir
+/* A voir
+*/
+int SMS::errorSMS(){
 	return 0;
 }

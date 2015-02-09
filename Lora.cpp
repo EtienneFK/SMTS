@@ -1,22 +1,34 @@
 #include "Lora.h"
 #include <string>
 using namespace std;
-Lora::Lora(){ //Constructor
+/* Constructor
+*/
+Lora::Lora(){
 	
 }
-Lora::~Lora(){ //Destructor
+/* Destructor
+*/
+Lora::~Lora(){
 	
 }
-void Lora::sendLora(string _message){ //Send data using LoRa network
+/* Send data using LoRa network
+*/
+void Lora::sendLora(string _message){
 	
 }
-string Lora::receiveLora(){ //Return a LoRa message into a char*
+/* Return a LoRa message into a char*
+*/
+char *Lora::receiveLora(){
 	return NULL;
 }
-
-bool Lora::checkLoraAvailability(){ //return true if the network is sufficient for sending a LoRa message otherwise false
+/* Return true if the network is sufficient for sending a LoRa message 
+	otherwise return false
+*/
+bool Lora::checkLoraAvailability(){ //
 	return true;
 }
-int Lora::errorLora(){ //A voir
+/* A voir
+*/
+int Lora::errorLora(){
 	return 0;
 }
