@@ -3,12 +3,11 @@
 */
 #ifndef DEF_TCP
 #define DEF_TCP
+#define URL_SERV "http://......"
 
-#include <GSM.h>
+#include <LGPRS.h>
+#include <LGPRSClient.h>
 class TCP{
-	private:
-	string _adrServ;
-	
 	public:
 	TCP(); //Constructor
 	~TCP(); //Destructor

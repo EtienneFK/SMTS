@@ -29,16 +29,16 @@ char *SMS::receiveSMS(){
 		delay(1000);
 	}
 	char _buf[10];
-	LSMS.remoteNumber(_buf,10); //Number stored
-	if(strcmp(_buf,_numTel)=0){ //Verify if the number is allowed to communicate with the device
-		char _message[50]; //Message received
-		int c; //Chars of SMS
-		int n; //Increment
+	LSMS.remoteNumber(_buf,10); 				//Number stored
+	if(strcmp(_buf,_numTel)=0){ 				//Verify if the number is allowed to communicate with the device
+		char _message[50]; 						//Message received
+		int c; 									//Chars of SMS
+		int n; 									//Increment
 		while(true){
-			c = LSMS.read(); //Message content (one byte at a time)
+			c = LSMS.read(); 					//Message content (one byte at a time)
 			
 			if(c<0)
-				break; //End of message content
+				break; 							//End of message content
 		}
 		
 	}
