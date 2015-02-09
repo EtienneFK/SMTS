@@ -14,8 +14,6 @@
 /*! \class Communication
 * \brief Classe de gestion des échanges de données
 	Class who manage differents way for data exchange
-*
-*
 */
 class Communication
 {
@@ -28,9 +26,28 @@ class Communication
 	bool chkTCP;
 	
 	public:
-	Communication(); //Constructor
-	~Communication(); //Destructor
-	char *receiveData(int _nComm){}; //Receive data a put into a char*
-	void sendData(int _nComm, string _data){};//Send data into a way of communication specified
+	/*! \brief Constructor
+	*
+	*	Constructor of Communication's class
+	*
+	*/
+	Communication();
+	/*! \brief Destructor
+	*
+	*	Destructor of Communication's class
+	*
+	*/
+	~Communication();
+	/*! \brief Receive data into a way of communication choosen
+	*   \param _nComm : Way of communication choosen 0 for SMS, 1 for Lora and 2 for 3G
+	*	\return char*
+	*
+	*/
+	char *receiveData(int _nComm){};
+	/*! \brief Send data into a way of communication specified 
+	*	\param _nComm : Way of communication choosen 0 for SMS, 1 for Lora and 2 for 3G
+	*	\param _data :  String Data to be sent 
+	*/
+	void sendData(int _nComm, string _data){};
 }
 #endif
