@@ -1,12 +1,13 @@
 /* Classe de gestion des échanges de données
 	Class who manage differents way for data exchange
 */
+#ifndef DEF_COMMUNICATION
+#define DEF_COMMUNICATION
+
 #include "SMS.h"
 #include "Lora.h"
 #include "TCP.h"
 
-#ifndef DEF_COMMUNICATION
-#define DEF_COMMUNICATION
 class Communication
 {
 	private:
