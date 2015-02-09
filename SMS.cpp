@@ -1,17 +1,13 @@
 #include "SMS.h"
 #include <string>
 using namespace std;
-SMS::SMS(){
+SMS::SMS(){ //Constructor
 	string _message = NULL;
 	char _numTel[10];
 }
-SMS::~SMS(){
-	
+SMS::~SMS(){ //Destructor
 }
-boolean SMS::checkGSMAvailability(){
-	return true;
-}
-void SMS::sendSMS(string _message){
+void SMS::sendSMS(string _message){ //send a SMS
 	while(!LSMS.ready()){
 		delay(1000);
 	}
@@ -19,7 +15,8 @@ void SMS::sendSMS(string _message){
 	LSMS.print(_message);
 	LSMS.endSMS()
 }
-char *SMS::receiveSMS(){
+char *SMS::receiveSMS(){ //return SMS into a char*
+
 	while(!LSMS.ready()){
 		delay(1000);
 	}
@@ -40,6 +37,9 @@ char *SMS::receiveSMS(){
 	
 	return NULL;
 }
-int SMS::errorSMS(){
+boolean SMS::checkGSMAvailability(){ //return true if the network is sufficient for sending a SMS otherwise false
+	return true;
+}
+int SMS::errorSMS(){ //A voir
 	return 0;
 }

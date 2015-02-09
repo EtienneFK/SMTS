@@ -7,11 +7,11 @@ class Lora{
 	private:
 	
 	public:
-	Lora();
-	~Lora();
-	void sendLora(string _message);
-	bool checkLoraAvailability();
-	string receiveLora();
-	int errorLora();
+	Lora();//Constructor
+	~Lora();//Destructor
+	void sendLora(string _message); //Send data using LoRa network
+	char *receiveLora(); //Return a LoRa message into a char*
+	bool checkLoraAvailability(); //return true if the network is sufficient for sending a LoRa message otherwise false
+	int errorLora(); //A voir
 }
 #endif

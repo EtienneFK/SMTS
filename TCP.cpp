@@ -1,21 +1,21 @@
 #include "TCP.h"
 #include <string>
 using namespace std;
-TCP::TCP(){
+TCP::TCP(){ //Constructor
 	string _adrServ = "http://.......";
 }
-TCP::~TCP(){
+TCP::~TCP(){ //Destructor
 	
 }
-void TCP::sendTCP(string _message){
+void TCP::sendTCP(string _message){ //Send data using 3G network
 	
 }
-string TCP::receiveTCP(){
+char *TCP::receiveTCP(){ //Receive data into 3G way and put in a char*
 	return NULL;
 }
-int TCP::errorTCP(){
-	return 0;
-}
-bool TCP::checkTCPAvailability(){
+bool TCP::checkTCPAvailability(){ //return true if the network is sufficient to create 3G connection otherwise false
 	return true;
+}
+int TCP::errorTCP(){ //A voir
+	return 0;
 }

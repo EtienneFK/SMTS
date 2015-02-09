@@ -1,6 +1,6 @@
 #include "Communication.h"
 
-Communication::Communication(){
+Communication::Communication(){ //Constructor
 	sms = new SMS();
 	lora = new Lora();
 	tcp = new TCP();
@@ -8,15 +8,15 @@ Communication::Communication(){
 	chkLora = false;
 	chkTCP = false;
 }
-Communication::~Communication(){
+Communication::~Communication(){ //Destructor
 	delete sms;
 	delete lora;
 	delete tcp;
 }
-char *Communication::receiveData(int _nComm){
+char *Communication::receiveData(int _nComm){ //Receive data a put into a char*
 	return NULL;
 }
-void Communication::sendData(int _nComm, string _data){
+void Communication::sendData(int _nComm, string _data){ // _nComm : code of way of communication (specified in config) ####### Send data into a way of communication specified
 	switch(_nComm){
 		case 0:{ //SMS sending
 			chkGSM = sms.checkGSMAvailability();//check GSM signal

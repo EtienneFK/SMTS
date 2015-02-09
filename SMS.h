@@ -10,11 +10,11 @@ class SMS{
 	
 	
 	public:
-	SMS();
-	~SMS();
-	boolean checkGSMAvailability();
-	void sendSMS(string _message);
-	char *receiveSMS();
-	int errorSMS();
+	SMS(); //Constructor
+	~SMS(); //Destructor
+	void sendSMS(string _message); //send a SMS
+	char *receiveSMS(); //return SMS into a char*
+	bool checkGSMAvailability(); //return true if the network is sufficient for sending a SMS otherwise false
+	int errorSMS(); //A voir
 }
 #endif

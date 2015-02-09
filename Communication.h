@@ -15,9 +15,9 @@ class Communication
 	bool chkTCP;
 	
 	public:
-	Communication();
-	~Communication();
-	char *receiveData(int _nComm){};
-	void sendData(int _nComm, string _data){};
+	Communication(); //Constructor
+	~Communication(); //Destructor
+	char *receiveData(int _nComm){}; //Receive data a put into a char*
+	void sendData(int _nComm, string _data){};//Send data into a way of communication specified
 }
 #endif
