@@ -4,7 +4,7 @@
 #ifndef DEF_SMS
 #define DEF_SMS
 
-#include <GSM.h>
+#include <LGSM.h>
 
 class SMS{
 	private:

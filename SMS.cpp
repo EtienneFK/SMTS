@@ -29,7 +29,7 @@ char *SMS::receiveSMS(){
 		delay(1000);
 	}
 	char _buf[10];
-	if(LSMS.available()){
+	if(LSMS.available()){							//Check if there a SMS available
 		
 	LSMS.remoteNumber(_buf,10); 					//Number stored
 		if(strcmp(_buf,_numTel)=0){ 				//Verify if the number is allowed to communicate with the device

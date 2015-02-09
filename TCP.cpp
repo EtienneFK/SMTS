@@ -15,7 +15,7 @@ TCP::~TCP(){
 /* Send data using 3G network
 */
 void TCP::sendTCP(string _message){
-	while(!LGPRS.attachGPRS()){						//Wainting for GPRS initialization
+	while(!LGPRS.attachGPRS()){						//Waiting for GPRS initialization
 		delay(1000);
 	}
 	LGPRSClient client;								//Create the connection to the server
@@ -27,7 +27,7 @@ void TCP::sendTCP(string _message){
 /* Receive data into 3G way and put in a char*
 */
 char *TCP::receiveTCP(){
-	while(!LGPRS.attachGPRS()){						//Wainting for GPRS initialization
+	while(!LGPRS.attachGPRS()){						//Waiting for GPRS initialization
 		delay(1000);
 	}
 	LGPRSClient client;								//Create the connection to the server
